@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.Rendering.LookDev;
 
 public class CanonballDestroyer : MonoBehaviour
 {
@@ -9,6 +10,11 @@ public class CanonballDestroyer : MonoBehaviour
     {
         Destroy(collision.gameObject);
     }*/
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+    }
 
     //tag both colliders
     //if a canonball collides with the sky one, delete
