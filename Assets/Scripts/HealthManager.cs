@@ -16,12 +16,12 @@ public class HealthManager : MonoBehaviour
             canonballSpawner.isFalling = false;
         }
     }
-    private void TakeOneDamage()
+    public void TakeOneDamage()
     {
         health--;
     }
 
-    private void TakeTwoDamage()
+    public void TakeTwoDamage()
     {
         health = health - 2;
     }

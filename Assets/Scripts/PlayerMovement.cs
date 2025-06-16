@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     private int currentLane;
     public List<Transform> lanes = new();
     public Transform refillMeterPosition;
-    private bool refilling;
+    public bool refilling;
     //Transform which is our down position
 
     //Array of transforms which are used for the lanes (all lanes)

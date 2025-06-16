@@ -4,9 +4,11 @@ using UnityEngine;
 public class PunchManager : MonoBehaviour
 {
     ScoreManager scoreManager;
+    HealthManager healthManager;
     private void Start()
     {
         scoreManager = GetComponent<ScoreManager>();
+        healthManager = GetComponent<HealthManager>();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -34,12 +36,12 @@ public class PunchManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         //canonball comes back down and hits ship
-        //take 1 damage
+        healthManager.TakeOneDamage();
     }
     private IEnumerator TooMuchCourageHit()
     {
         yield return new WaitForSeconds(2f);
-        //play animation missing 
-        //take 2 damage
+        //play animation player missing canonball 
+        healthManager.TakeTwoDamage();
     }
 }
