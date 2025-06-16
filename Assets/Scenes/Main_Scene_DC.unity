@@ -359,6 +359,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f68240e80a72474f8d998b18f409f4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dutchCourageMeter: {fileID: 1141614445}
 --- !u!61 &397558813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1020,10 +1021,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e812b237907834a8adff6b5e268a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCourage: 10
+  maxCourage: 60
   minCourage: 0
-  startingCourage: 5
+  startingCourage: 30
   currentCourage: 0
+  refillPosition: {fileID: 397558809}
 --- !u!1 &1324175008
 GameObject:
   m_ObjectHideFlags: 0
@@ -1563,6 +1565,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1880106290}
   - component: {fileID: 1880106289}
+  - component: {fileID: 1880106291}
   m_Layer: 0
   m_Name: Canonball Destroyer Ship
   m_TagString: Untagged
@@ -1631,6 +1634,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2010361233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1880106291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1880106288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eb6e88d023d3e1448a3d13634010217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HealthManager: {fileID: 1964420221}
 --- !u!1 &1964420219
 GameObject:
   m_ObjectHideFlags: 0
@@ -1675,7 +1691,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 958d6a853c0bd1f42adaa47b98e48279, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 10
+  health: 15
 --- !u!1 &1972496466
 GameObject:
   m_ObjectHideFlags: 0
@@ -1686,6 +1702,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1972496469}
   - component: {fileID: 1972496468}
+  - component: {fileID: 1972496470}
   m_Layer: 0
   m_Name: Canonball Destroyer Sky
   m_TagString: Untagged
@@ -1754,6 +1771,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2010361233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1972496470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1972496466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f604217940955264b84f5d3c0e3ed315, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2010361231
 GameObject:
   m_ObjectHideFlags: 0
@@ -1763,7 +1792,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2010361233}
-  - component: {fileID: 2010361232}
   m_Layer: 0
   m_Name: Canonball Destroyers
   m_TagString: Untagged
@@ -1771,20 +1799,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2010361232
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2010361231}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1eb6e88d023d3e1448a3d13634010217, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  shipFloor: {fileID: 1880106289}
-  sky: {fileID: 1972496468}
 --- !u!4 &2010361233
 Transform:
   m_ObjectHideFlags: 0

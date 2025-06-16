@@ -5,6 +5,7 @@ public class PunchManager : MonoBehaviour
 {
     ScoreManager scoreManager;
     HealthManager healthManager;
+    public DutchCourageMeter dutchCourageMeter;
     private void Start()
     {
         scoreManager = GetComponent<ScoreManager>();
@@ -15,10 +16,30 @@ public class PunchManager : MonoBehaviour
 
         var gravity = collision.gameObject.GetComponent<Rigidbody2D>();
         gravity.gravityScale = -4;
+
+        if (dutchCourageMeter.currentCourage <= 10f)
+        {
+            LowCourageHit();
+        }
+
+        if (dutchCourageMeter.currentCourage <= 20f)
+        {
+            MidCourageHit();
+        }
+
+        if (dutchCourageMeter.currentCourage <= 30f)
+        {
+            HighCourageHit();
+        }
+
+        if (dutchCourageMeter.currentCourage <= 40f)
+        {
+            TooMuchCourageHit();
+        }
         //depending on the dutch courage meter level, begin one of the methods below
 
-       
-       
+
+
     }
     private IEnumerator HighCourageHit()
     {
@@ -42,6 +63,6 @@ public class PunchManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2f);
         //play animation player missing canonball 
-        healthManager.TakeTwoDamage();
+        healthManager.TakeThreeDamage();
     }
 }
