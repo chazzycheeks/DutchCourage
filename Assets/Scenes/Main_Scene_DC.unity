@@ -359,7 +359,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f68240e80a72474f8d998b18f409f4e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreManager: {fileID: 1324175010}
+  healthManager: {fileID: 1964420221}
   dutchCourageMeter: {fileID: 1141614445}
+  shipHealth: {fileID: 3508240387344177639, guid: aa38e0ed042ea01469a8b365caf9a9df, type: 3}
 --- !u!61 &397558813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -845,10 +848,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawns:
-  - {fileID: 787538632}
-  - {fileID: 2093494169}
-  - {fileID: 2133941892}
+  - spawnPoint: {fileID: 787538632}
+    currentObject: {fileID: 0}
+  - spawnPoint: {fileID: 2093494169}
+    currentObject: {fileID: 0}
+  - spawnPoint: {fileID: 2133941892}
+    currentObject: {fileID: 0}
   shipPrefab: {fileID: 5261482144945281026, guid: aa38e0ed042ea01469a8b365caf9a9df, type: 3}
+  canonballs: {fileID: 1340770685}
 --- !u!4 &842974404
 Transform:
   m_ObjectHideFlags: 0
@@ -1021,7 +1028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71e812b237907834a8adff6b5e268a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxCourage: 60
+  maxCourage: 35
   minCourage: 0
   startingCourage: 30
   currentCourage: 0

@@ -2,30 +2,48 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+[System.Serializable]
+public class ShipSpawnPoint
+{
+    public Transform spawnPoint;
+    public GameObject currentObject;
+}
+
 public class ShipSpawner : MonoBehaviour
 {
-    public List<Transform> spawns = new();
+    public List<ShipSpawnPoint> spawns = new();
     public GameObject shipPrefab;
+    //public Canonballs canonballs;
 
-    private void Update()
+    public IEnumerator shipSpawnCoroutine;
+   
+    private void Start()
     {
-       // SpawnShip();
+        if (shipSpawnCoroutine == null)
+        {
+            shipSpawnCoroutine = SpawnShip();
+            StartCoroutine(shipSpawnCoroutine); 
+        }
     }
 
     private IEnumerator SpawnShip()
     {
        // int shipSpawns = spawns.Count;
-        foreach (Transform shipSpawner in spawns)
+        foreach (ShipSpawnPoint shipSpawner in spawns)
         {
-            if (shipSpawner == null)
+            if (shipSpawner.currentObject == null)
             {
-                Instantiate(shipPrefab);
+                GameObject newShip = Instantiate(shipPrefab, shipSpawner.spawnPoint.position, Quaternion.identity);
+                shipSpawner.currentObject = newShip;
+                //canonballs.SpawnCanonball();
+                break;
             }
-            else if (shipSpawner != null)
-            {
-              //find an emtpy one, if there are no empty ones, wait 10 seconds, return to the start of the method
-            }
-            yield return new WaitForSeconds(10f);
+            
         }
+        yield return new WaitForSeconds(10f);
+
+        shipSpawnCoroutine = null;
     }
+
 }

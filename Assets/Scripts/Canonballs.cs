@@ -8,11 +8,8 @@ public class Canonballs : MonoBehaviour
     
     private float ballDelay;
     public bool isFalling = true;
-    private void Start()
-    {
-        SpawnCanonball();
-    }
-    private void SpawnCanonball()
+    
+    public void SpawnCanonball()
     {
         if (isFalling == false)
         {
@@ -21,7 +18,7 @@ public class Canonballs : MonoBehaviour
         int canonballSpawner = Random.Range(0, canonballSpawnPoints.Count);
         Instantiate(CanonballPrefab, canonballSpawnPoints[canonballSpawner]);
         ballDelay = Random.Range(3, 5);
-        Invoke(nameof(SpawnCanonball), ballDelay);
+        //Invoke(nameof(SpawnCanonball), ballDelay);
 
       
     }
