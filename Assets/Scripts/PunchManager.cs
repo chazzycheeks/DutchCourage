@@ -17,6 +17,7 @@ public class PunchManager : MonoBehaviour
 
         var gravity = collision.gameObject.GetComponent<Rigidbody2D>();
         gravity.gravityScale = -4;
+        ShipHealth shipHealth = collision.gameObject.GetComponent<Projectile>().shipHealth;
 
         if (dutchCourageMeter.currentCourage <= 10f)
         {
@@ -26,13 +27,13 @@ public class PunchManager : MonoBehaviour
 
         else if (dutchCourageMeter.currentCourage <= 20f)
         {
-            StartCoroutine(MidCourageHit());
+            StartCoroutine(MidCourageHit(shipHealth));
             Debug.Log("midhit");
         }
 
         else if (dutchCourageMeter.currentCourage <= 30f)
         {
-            StartCoroutine(HighCourageHit());
+            StartCoroutine(HighCourageHit(shipHealth));
             Debug.Log("highhit");
         }
 
@@ -43,7 +44,7 @@ public class PunchManager : MonoBehaviour
         }
 
     }
-    private IEnumerator HighCourageHit(//ShipHealth shipHealth)
+    private IEnumerator HighCourageHit(ShipHealth shipHealth)
     {
         scoreManager.AddScore1();
         //play animation ship getting hit
@@ -54,7 +55,7 @@ public class PunchManager : MonoBehaviour
    
 
     }
-    private IEnumerator MidCourageHit(//ShipHealth shipHealth)
+    private IEnumerator MidCourageHit(ShipHealth shipHealth)
     {
         scoreManager.AddScore1();
         //play animation ship getting hit

@@ -16,9 +16,12 @@ public class ShipSpawner : MonoBehaviour
     public GameObject shipPrefab;
     //public Canonballs canonballs;
 
+    //A list of all ships currently spawned
+    public List<ShipHealth> ships = new();
+
     public IEnumerator shipSpawnCoroutine;
    
-    private void Start()
+    private void Update()
     {
         if (shipSpawnCoroutine == null)
         {
@@ -29,6 +32,7 @@ public class ShipSpawner : MonoBehaviour
 
     private IEnumerator SpawnShip()
     {
+        yield return new WaitForSeconds(2f);
        // int shipSpawns = spawns.Count;
         foreach (ShipSpawnPoint shipSpawner in spawns)
         {
@@ -36,12 +40,17 @@ public class ShipSpawner : MonoBehaviour
             {
                 GameObject newShip = Instantiate(shipPrefab, shipSpawner.spawnPoint.position, Quaternion.identity);
                 shipSpawner.currentObject = newShip;
+
+                //Add this new ship to the list of spawned ships
+                ships.Add(newShip.GetComponent<ShipHealth>());
+
                 //canonballs.SpawnCanonball();
+
                 break;
             }
             
         }
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(8f);
 
         shipSpawnCoroutine = null;
     }

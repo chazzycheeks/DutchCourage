@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
-    public int health = 15;
+    public int health = 10;
     Canonballs canonballSpawner;
 
     private void Start()
