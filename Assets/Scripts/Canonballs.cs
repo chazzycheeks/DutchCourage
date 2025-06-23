@@ -1,19 +1,23 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Canonballs : MonoBehaviour
 {
     [SerializeField] private List<Transform> canonballSpawnPoints =new();
+    public List<Transform> warningSpawnPoints =new();
     public GameObject CanonballPrefab;
+    public GameObject WarningPrefab;
     
     private float ballDelay;
-    public bool isFalling = true;
+    public bool isFalling;
 
     private ShipSpawner shipSpawner;
     private bool spawningAllowed = false;  
 
     private void Start()
     {
+        isFalling = true;
         shipSpawner = FindAnyObjectByType<ShipSpawner>();     
         SpawnCanonball();
     }
@@ -41,6 +45,7 @@ public class Canonballs : MonoBehaviour
         {
             int canonballSpawner = Random.Range(0, canonballSpawnPoints.Count);
             GameObject newCanonball = Instantiate(CanonballPrefab, canonballSpawnPoints[canonballSpawner]);
+            SpawnWarning();
 
             //Instead of getting the ship health from the ship itself
             //We pick a random ship from the ShipSpawner's list of ships
@@ -66,4 +71,13 @@ public class Canonballs : MonoBehaviour
 
       
     }
+    public void SpawnWarning()
+    {
+        Instantiate(WarningPrefab, warningSpawnPoints[1]);
+        //have the warning prefabs spawn on the warningspawnpoint that has the same int that a canonball has just spawned from on the canonballspawnpoints
+        //remove the warning just before a canonball enters the frame
+      
+    }
+
+  
 }
