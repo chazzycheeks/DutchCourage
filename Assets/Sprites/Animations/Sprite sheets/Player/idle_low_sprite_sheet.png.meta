@@ -1,28 +1,28 @@
 fileFormatVersion: 2
-guid: 44c91ea66ce87db4692ef05e7a5a61f3
+guid: 9649eefd130c02841a0b7ec8e3bcc3e2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9140637072388535279
-    second: pirate_idle_normal_sprite_sheet_0
+      213: 1017384575535657922
+    second: idle_low_sprite_sheet_0
   - first:
-      213: 6780396220189458932
-    second: pirate_idle_normal_sprite_sheet_1
+      213: -625177361028238915
+    second: idle_low_sprite_sheet_1
   - first:
-      213: 2134147418903150754
-    second: pirate_idle_normal_sprite_sheet_2
+      213: 614947030984170100
+    second: idle_low_sprite_sheet_2
   - first:
-      213: 4197069683917868802
-    second: pirate_idle_normal_sprite_sheet_3
+      213: 5016642050804040264
+    second: idle_low_sprite_sheet_3
   - first:
-      213: -7516034294578601686
-    second: pirate_idle_normal_sprite_sheet_4
+      213: 956688054439935154
+    second: idle_low_sprite_sheet_4
   - first:
-      213: -4273265265180105899
-    second: pirate_idle_normal_sprite_sheet_5
+      213: -3676094273761222471
+    second: idle_low_sprite_sheet_5
   - first:
-      213: -2212341153098104654
-    second: pirate_idle_normal_sprite_sheet_6
+      213: 3305771630614551204
+    second: idle_low_sprite_sheet_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 120
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,172 +127,159 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_0
+      name: idle_low_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1100
-        width: 550
-        height: 550
+        x: 99
+        y: 10
+        width: 357
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7ffa0fe2beff4b64cb73827c268a174f
-      internalID: 1098740814
+      spriteID: 2c3b3c091e97e1e00800000000000000
+      internalID: 1017384575535657922
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_1
+      name: idle_low_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 550
-        y: 1100
-        width: 550
-        height: 550
+        x: 649
+        y: 10
+        width: 356
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: cc91822b2c856a2418954cf505e0dac5
-      internalID: 1314166283
+      spriteID: db1bb42a08ce257f0800000000000000
+      internalID: -625177361028238915
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_2
+      name: idle_low_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 1100
-        width: 550
-        height: 550
+        x: 1199
+        y: 10
+        width: 355
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: bed1443d26ff6d548b9f18fb1f50bd0d
-      internalID: 842855980
+      spriteID: 47a1e79011bb88800800000000000000
+      internalID: 614947030984170100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_3
+      name: idle_low_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 550
-        width: 550
-        height: 550
+        x: 1747
+        y: 408
+        width: 12
+        height: 11
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f6e797d43e5cd98478ec8bf3301f2269
-      internalID: -1725107944
+      spriteID: 842467bad51be9540800000000000000
+      internalID: 5016642050804040264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_4
+      name: idle_low_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 550
-        y: 550
-        width: 550
-        height: 550
+        x: 1749
+        y: 10
+        width: 357
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: e5ccb7ae971ae394dbecabcf5328aed9
-      internalID: -1249993725
+      spriteID: 2bc70cd77b6d64d00800000000000000
+      internalID: 956688054439935154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_5
+      name: idle_low_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 1100
-        y: 550
-        width: 550
-        height: 550
+        x: 2299
+        y: 10
+        width: 356
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f8aa97311ed72d146b06ade7410571b9
-      internalID: -275498872
+      spriteID: 9b06d9b1cb3ebfcc0800000000000000
+      internalID: -3676094273761222471
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: pirate_idle_normal_sprite_sheet_6
+      name: idle_low_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 550
-        height: 550
+        x: 2849
+        y: 10
+        width: 355
+        height: 514
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 9369249364c8a6b49b50682fbc0e53f1
-      internalID: 1218736685
+      spriteID: 4aa185788c570ed20800000000000000
+      internalID: 3305771630614551204
       vertices: []
       indices: 
       edges: []
@@ -301,7 +288,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 517baa9f1cd862a4a807e635d6467e86
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -310,14 +297,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      pirate_idle_normal_sprite_sheet_0: 1098740814
-      pirate_idle_normal_sprite_sheet_1: 1314166283
-      pirate_idle_normal_sprite_sheet_2: 842855980
-      pirate_idle_normal_sprite_sheet_3: -1725107944
-      pirate_idle_normal_sprite_sheet_4: -1249993725
-      pirate_idle_normal_sprite_sheet_5: -275498872
-      pirate_idle_normal_sprite_sheet_6: 1218736685
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
