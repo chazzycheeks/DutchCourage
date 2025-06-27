@@ -7,7 +7,7 @@ public class HealthManager : MonoBehaviour
 
     private void Start()
     {
-        canonballSpawner = GetComponent<Canonballs>();
+        canonballSpawner = FindAnyObjectByType<Canonballs>();
     }
     private void Update()
     {

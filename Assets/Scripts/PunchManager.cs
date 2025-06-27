@@ -8,7 +8,8 @@ public class PunchManager : MonoBehaviour
     public DutchCourageMeter dutchCourageMeter;
 
     public Animator player;
-    // public ShipHealth shipHealth;
+    public Animator splash;
+   // public ShipHealth shipHealth;
     private void Start()
     {
        /* scoreManager = GetComponent<ScoreManager>();
@@ -23,7 +24,7 @@ public class PunchManager : MonoBehaviour
 
         if (dutchCourageMeter.currentCourage <= 10f)
         {
-            LowCourageHit();
+            StartCoroutine(LowCourageHit());
             Debug.Log("lowhit");
         }
 
@@ -50,10 +51,9 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchcourageous");
         scoreManager.AddScore1();
-        //play animation ship getting hit
-        yield return new WaitForSeconds(2f);
-       // shipHealth.shipHealth -= 3;
-        shipHealth.DestroyShip();
+        yield return new WaitForSeconds(1.7f);
+        shipHealth.ShipHit();
+        shipHealth.StartCoroutine(shipHealth.DestroyShip());
         scoreManager.AddScore2();
    
 
@@ -62,21 +62,22 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchnormal");
         scoreManager.AddScore1();
-        //play animation ship getting hit
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(1.7f);
+        shipHealth.ShipHit();
         shipHealth.shipHealth--;
         if (shipHealth.shipHealth <= 0)
         {
-            //play animation of ship getting destroyed
-            //delete ship
-            shipHealth.DestroyShip();
+            shipHealth.ShipHit();
+            shipHealth.StartCoroutine(shipHealth.DestroyShip());
             scoreManager.AddScore2();
         }
     }
-    private void LowCourageHit()
+    private IEnumerator LowCourageHit()
     {
         player.SetTrigger("punchlow");
         scoreManager.AddScore1();
+        yield return new WaitForSeconds(1.7f);
+        splash.SetTrigger("splash");
         //play animation cannonball falling in water
     }
     private void TooMuchCourageHit()

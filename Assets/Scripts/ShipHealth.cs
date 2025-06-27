@@ -1,33 +1,38 @@
+using System.Collections;
 using UnityEngine;
 
 public class ShipHealth : MonoBehaviour
 {
     public int shipHealth;
-   /* Canonballs canonballs;*/
     private ShipSpawner shipSpawner;
-
+    public Animator enemyShip;
+    public Animator shipHitAnim;
+    public Animator shipFire;
 
 
     private void Start()
     {
         shipHealth = 2;
-   /*     canonballs = FindAnyObjectByType<Canonballs>();*/
         shipSpawner = FindAnyObjectByType<ShipSpawner>();
 
-       /* Invoke("CanonballSpawner", Random.Range(3, 5));*/
     }
-
-    //Remove this function
-/*    private void CanonballSpawner()
+    public void ShipFire()
     {
-        Debug.Log("yes");
-        canonballs.SpawnCanonball(this);
-        Invoke("CanonballSpawner", Random.Range(3, 5));
-    }*/
-
-    public void DestroyShip()
+        shipFire.SetTrigger("fire");
+    }
+    public void ShipHit()
     {
-        //Remove this object from the ShipSpawmer's list of ships
+        shipHitAnim.SetTrigger("hit");
+    }
+    public IEnumerator DestroyShip()
+    {
+        if (shipSpawner.ships.Count == 0)
+        {
+            yield break;
+        }
+        Debug.Log("shipisdestroyed");
+        enemyShip.SetTrigger("destroy");
+        yield return new WaitForSeconds(2f);
         shipSpawner.ships.Remove(this);
 
         Destroy(gameObject);

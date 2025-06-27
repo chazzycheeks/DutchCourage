@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator playerAnim;
     public Animator closeUp;
+    public Animator cameraAnim;
     //Transform which is our down position
 
     //Array of transforms which are used for the lanes (all lanes)
@@ -27,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     {
         playerAnim.SetBool("isRefilling", refilling);
         closeUp.SetBool("isRefilling", refilling);
+        cameraAnim.SetBool("isRefilling", refilling);
     }
     private void OnEnable()
     {

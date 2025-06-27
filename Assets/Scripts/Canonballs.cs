@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.Animations;
 using UnityEngine;
 
 public class Canonballs : MonoBehaviour
@@ -13,12 +14,15 @@ public class Canonballs : MonoBehaviour
     public bool isFalling;
 
     private ShipSpawner shipSpawner;
+    [SerializeField] private ShipHealth shipHealth;
+    
     private bool spawningAllowed = false;  
 
     private void Start()
     {
+        //shipHealth.GetComponent<ShipHealth>();
         isFalling = true;
-        shipSpawner = FindAnyObjectByType<ShipSpawner>();     
+        shipSpawner = FindAnyObjectByType<ShipSpawner>();  
         SpawnCanonball();
     }
 
@@ -45,6 +49,7 @@ public class Canonballs : MonoBehaviour
         {
             int canonballSpawner = Random.Range(0, canonballSpawnPoints.Count);
             GameObject newCanonball = Instantiate(CanonballPrefab, canonballSpawnPoints[canonballSpawner]);
+            
             SpawnWarning(canonballSpawner);
 
             //Instead of getting the ship health from the ship itself
@@ -52,6 +57,7 @@ public class Canonballs : MonoBehaviour
             //And assign that shipHealth to the new cannonball
             int index = Random.Range(0, shipSpawner.ships.Count);
             newCanonball.GetComponent<Projectile>().shipHealth = shipSpawner.ships[index];
+            shipHealth.ShipFire();
         }
 
         //Have the ball delay be affected by how many items are in the ShipSpawner's list of ships
@@ -74,9 +80,11 @@ public class Canonballs : MonoBehaviour
     public void SpawnWarning(int index)
     {
         Instantiate(WarningPrefab, warningSpawnPoints[index]);
+        
+        
         //have the warning prefabs spawn on the warningspawnpoint that has the same int that a canonball has just spawned from on the canonballspawnpoints
         //remove the warning just before a canonball enters the frame
-      
+
     }
 
   
