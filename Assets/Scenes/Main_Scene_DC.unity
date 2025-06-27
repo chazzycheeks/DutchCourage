@@ -810,7 +810,6 @@ MonoBehaviour:
   dutchCourageMeter: {fileID: 1141614445}
   player: {fileID: 397558810}
   splash: {fileID: 1001058985}
-  enemyShip: {fileID: 0}
 --- !u!61 &397558813
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2745,6 +2744,7 @@ MonoBehaviour:
   CanonballPrefab: {fileID: 5345909904037703834, guid: 4ce12bbc5dd8f7c4fa1e768b1c5835ff, type: 3}
   WarningPrefab: {fileID: 2247908340018318744, guid: 952484af2d9c0904e8498644684f1915, type: 3}
   isFalling: 1
+  shipHealth: {fileID: 3508240387344177639, guid: aa38e0ed042ea01469a8b365caf9a9df, type: 3}
 --- !u!4 &1340770686
 Transform:
   m_ObjectHideFlags: 0
