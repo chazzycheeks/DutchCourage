@@ -45,7 +45,7 @@ public class Canonballs : MonoBehaviour
         {
             int canonballSpawner = Random.Range(0, canonballSpawnPoints.Count);
             GameObject newCanonball = Instantiate(CanonballPrefab, canonballSpawnPoints[canonballSpawner]);
-            SpawnWarning();
+            SpawnWarning(canonballSpawner);
 
             //Instead of getting the ship health from the ship itself
             //We pick a random ship from the ShipSpawner's list of ships
@@ -71,9 +71,9 @@ public class Canonballs : MonoBehaviour
 
       
     }
-    public void SpawnWarning()
+    public void SpawnWarning(int index)
     {
-        Instantiate(WarningPrefab, warningSpawnPoints[1]);
+        Instantiate(WarningPrefab, warningSpawnPoints[index]);
         //have the warning prefabs spawn on the warningspawnpoint that has the same int that a canonball has just spawned from on the canonballspawnpoints
         //remove the warning just before a canonball enters the frame
       

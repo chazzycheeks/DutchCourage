@@ -84,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,6 +121,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -128,10 +141,10 @@ TextureImporter:
       name: hit_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 204
-        y: 107
-        width: 133
-        height: 99
+        x: 0
+        y: 500
+        width: 550
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,10 +163,10 @@ TextureImporter:
       name: hit_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 674
-        y: 42
-        width: 289
-        height: 218
+        x: 550
+        y: 500
+        width: 550
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +185,10 @@ TextureImporter:
       name: hit_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1159
-        y: 5
-        width: 406
-        height: 321
+        x: 1100
+        y: 500
+        width: 550
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,10 +207,10 @@ TextureImporter:
       name: hit_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1721
-        y: 17
-        width: 375
-        height: 295
+        x: 0
+        y: 0
+        width: 550
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +229,10 @@ TextureImporter:
       name: hit_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2259
-        y: 5
-        width: 406
-        height: 321
+        x: 550
+        y: 0
+        width: 550
+        height: 500
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -238,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 6147c9783c5e0b24e8ce42e8ca549e49
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      hit_sprite_sheet_0: 4871451601089255752
+      hit_sprite_sheet_1: 1547516616172564080
+      hit_sprite_sheet_2: 5219260159286428953
+      hit_sprite_sheet_3: 4952273444579518712
+      hit_sprite_sheet_4: -8139485968604601863
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

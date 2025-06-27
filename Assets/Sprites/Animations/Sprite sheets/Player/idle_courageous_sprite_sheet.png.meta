@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 47ab0768221d9c2429b5874ed0f4b429
+guid: 04fedea26ff284148887daaa1cb208f6
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -69,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -90,7 +90,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -127,6 +127,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -134,10 +147,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 99
-        y: 10
-        width: 354
-        height: 493
+        x: 0
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -156,10 +169,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 649
-        y: 10
-        width: 357
-        height: 493
+        x: 550
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +191,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1199
-        y: 10
-        width: 357
-        height: 500
+        x: 1100
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -200,10 +213,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1749
-        y: 10
-        width: 356
-        height: 505
+        x: 0
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -222,10 +235,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2299
-        y: 10
-        width: 356
-        height: 513
+        x: 550
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -244,10 +257,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 2849
-        y: 10
-        width: 357
-        height: 514
+        x: 1100
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,10 +279,10 @@ TextureImporter:
       name: idle_courageous_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 3399
-        y: 10
-        width: 356
-        height: 514
+        x: 0
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -288,7 +301,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 167983ff6d3f23b40889201509513260
     internalID: 0
     vertices: []
     indices: 
@@ -297,7 +310,14 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      idle_courageous_sprite_sheet_0: -1336236451871846068
+      idle_courageous_sprite_sheet_1: 3270417003732093811
+      idle_courageous_sprite_sheet_2: 673105016195996694
+      idle_courageous_sprite_sheet_3: -6762916825238801903
+      idle_courageous_sprite_sheet_4: 9151246605466169415
+      idle_courageous_sprite_sheet_5: 4400534355824042325
+      idle_courageous_sprite_sheet_6: -5491075118190240232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

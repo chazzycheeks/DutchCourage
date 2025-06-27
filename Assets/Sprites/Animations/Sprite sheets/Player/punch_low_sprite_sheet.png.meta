@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 4aba9f2b87f96c1499a527599736c55e
+guid: c4c9cbd85b445fe418e36569ac0b1102
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -75,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -96,7 +96,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -133,6 +133,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -140,10 +153,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 90
-        y: 10
-        width: 362
-        height: 493
+        x: 0
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +175,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 610
-        y: 10
-        width: 394
-        height: 485
+        x: 550
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +197,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1160
-        y: 10
-        width: 394
-        height: 485
+        x: 1100
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +219,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1708
-        y: 10
-        width: 399
-        height: 485
+        x: 0
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +241,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2292
-        y: 10
-        width: 361
-        height: 485
+        x: 550
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +263,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 2849
-        y: 10
-        width: 355
-        height: 514
+        x: 1100
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -272,10 +285,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 3399
-        y: 10
-        width: 357
-        height: 514
+        x: 0
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -294,10 +307,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 3949
-        y: 10
-        width: 356
-        height: 514
+        x: 550
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -316,10 +329,10 @@ TextureImporter:
       name: punch_low_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 4499
-        y: 10
-        width: 355
-        height: 514
+        x: 1100
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -338,7 +351,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 559870f15e6e8084c8d6b68d7d380409
     internalID: 0
     vertices: []
     indices: 
@@ -347,7 +360,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      punch_low_sprite_sheet_0: -1913147801894709279
+      punch_low_sprite_sheet_1: -8638411987125421250
+      punch_low_sprite_sheet_2: -8915565727204356709
+      punch_low_sprite_sheet_3: 5687888499108973675
+      punch_low_sprite_sheet_4: -2567726745271888793
+      punch_low_sprite_sheet_5: -8914383541341196921
+      punch_low_sprite_sheet_6: 6683962691726534714
+      punch_low_sprite_sheet_7: -1766441610327770172
+      punch_low_sprite_sheet_8: -2656476037210181854
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

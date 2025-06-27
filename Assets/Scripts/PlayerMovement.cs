@@ -8,6 +8,10 @@ public class PlayerMovement : MonoBehaviour
     public List<Transform> lanes = new();
     public Transform refillMeterPosition;
     public bool refilling;
+    [SerializeField] private bool canMove;
+
+    public Animator playerAnim;
+    public Animator closeUp;
     //Transform which is our down position
 
     //Array of transforms which are used for the lanes (all lanes)
@@ -17,6 +21,12 @@ public class PlayerMovement : MonoBehaviour
     private void Start()
     {
         currentLane = 1;
+        canMove = false;
+    }
+    private void Update()
+    {
+        playerAnim.SetBool("isRefilling", refilling);
+        closeUp.SetBool("isRefilling", refilling);
     }
     private void OnEnable()
     {
@@ -27,8 +37,14 @@ public class PlayerMovement : MonoBehaviour
     {
         InputManager.OnSwipe -= ProcessSwipe;
     }
+
+    public void ToggleMovement()
+    {
+        canMove = !canMove;
+    }
     private void ProcessSwipe(string direction)
     {
+        if (!canMove) { return; }
         switch (direction)
         {
             case "Right":

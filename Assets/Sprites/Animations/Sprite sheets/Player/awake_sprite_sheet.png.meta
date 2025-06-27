@@ -1,64 +1,91 @@
 fileFormatVersion: 2
-guid: 1f3292778a72161468a4cc5fad9af9f3
+guid: 1741d82d9afc0cc45aa7162e4789a8d2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4072360762267415972
-    second: sleeping_sprite_sheet_0
+      213: 1063356459280790430
+    second: awake_sprite_sheet_0
   - first:
-      213: 405243939537687277
-    second: sleeping_sprite_sheet_1
+      213: -3601693801899416141
+    second: awake_sprite_sheet_1
   - first:
-      213: 4094606949452412807
-    second: sleeping_sprite_sheet_2
+      213: -2440090993173382246
+    second: awake_sprite_sheet_2
   - first:
-      213: -362578155066156292
-    second: sleeping_sprite_sheet_3
+      213: 6630270631597021774
+    second: awake_sprite_sheet_3
   - first:
-      213: 2738852859464785124
-    second: sleeping_sprite_sheet_4
+      213: -6826882137190597416
+    second: awake_sprite_sheet_4
   - first:
-      213: 4425786539764569386
-    second: sleeping_sprite_sheet_5
+      213: 4423762105751573579
+    second: awake_sprite_sheet_5
   - first:
-      213: -4511877068816451311
-    second: sleeping_sprite_sheet_6
+      213: 9073519447619716292
+    second: awake_sprite_sheet_6
   - first:
-      213: -8108954808857588157
-    second: sleeping_sprite_sheet_7
+      213: -4783787184909310574
+    second: awake_sprite_sheet_7
   - first:
-      213: 1043498107797803130
-    second: sleeping_sprite_sheet_8
+      213: -4687791338777632319
+    second: awake_sprite_sheet_8
   - first:
-      213: 7322297077896630939
-    second: sleeping_sprite_sheet_9
+      213: 8681136732033159641
+    second: awake_sprite_sheet_9
   - first:
-      213: -1941850939002269048
-    second: sleeping_sprite_sheet_10
+      213: 1345705555088577584
+    second: awake_sprite_sheet_10
   - first:
-      213: -3109446009729780102
-    second: sleeping_sprite_sheet_11
+      213: 8679198956464231416
+    second: awake_sprite_sheet_11
   - first:
-      213: -1324837660030047843
-    second: sleeping_sprite_sheet_12
+      213: 7690786999038991432
+    second: awake_sprite_sheet_12
   - first:
-      213: -973053334494202443
-    second: sleeping_sprite_sheet_13
+      213: -8684739758063598872
+    second: awake_sprite_sheet_13
   - first:
-      213: -6418677876450489640
-    second: sleeping_sprite_sheet_14
+      213: -818220156348856494
+    second: awake_sprite_sheet_14
   - first:
-      213: 1863979858627879853
-    second: sleeping_sprite_sheet_15
+      213: 4159222571475937706
+    second: awake_sprite_sheet_15
   - first:
-      213: 3447358545517069252
-    second: sleeping_sprite_sheet_16
+      213: 4028584236370616547
+    second: awake_sprite_sheet_16
   - first:
-      213: -6691675247135174618
-    second: sleeping_sprite_sheet_17
+      213: 4164778914362116755
+    second: awake_sprite_sheet_17
   - first:
-      213: -7218107944292357807
-    second: sleeping_sprite_sheet_18
+      213: -4629180158113454920
+    second: awake_sprite_sheet_18
+  - first:
+      213: 1937317076002951536
+    second: awake_sprite_sheet_19
+  - first:
+      213: -1749290001854296830
+    second: awake_sprite_sheet_20
+  - first:
+      213: 4407685187594610890
+    second: awake_sprite_sheet_21
+  - first:
+      213: -5903837056911894487
+    second: awake_sprite_sheet_22
+  - first:
+      213: -4816823645947409819
+    second: awake_sprite_sheet_23
+  - first:
+      213: -6671583397555127616
+    second: awake_sprite_sheet_24
+  - first:
+      213: -7232564301411290479
+    second: awake_sprite_sheet_25
+  - first:
+      213: -2627216933952812352
+    second: awake_sprite_sheet_26
+  - first:
+      213: -7373842123289900000
+    second: awake_sprite_sheet_27
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -105,7 +132,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,7 +153,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -163,17 +190,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_0
+      name: awake_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 853
-        y: 284
-        width: 13
-        height: 13
+        x: 0
+        y: 1650
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +222,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c5acfc786711c77c0800000000000000
-      internalID: -4072360762267415972
+      spriteID: e937c09d01dc1ce00800000000000000
+      internalID: 1063356459280790430
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_1
+      name: awake_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 1391
-        y: 290
-        width: 9
-        height: 10
+        x: 550
+        y: 1650
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,20 +244,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: de216874737bf9500800000000000000
-      internalID: 405243939537687277
+      spriteID: 3b52f0cd196340ec0800000000000000
+      internalID: -3601693801899416141
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_2
+      name: awake_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 2501
-        y: 287
-        width: 18
-        height: 15
+        x: 1100
+        y: 1650
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,20 +266,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 787f4fc8357f2d830800000000000000
-      internalID: 4094606949452412807
+      spriteID: a9b354c7b2e032ed0800000000000000
+      internalID: -2440090993173382246
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_3
+      name: awake_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 3039
-        y: 295
-        width: 11
-        height: 13
+        x: 1650
+        y: 1650
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +288,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: cfa17f7c61dd7faf0800000000000000
-      internalID: -362578155066156292
+      spriteID: e4a9b01c204730c50800000000000000
+      internalID: 6630270631597021774
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_4
+      name: awake_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 308
-        y: 277
-        width: 20
-        height: 11
+        x: 0
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,20 +310,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ec16742a2c520620800000000000000
-      internalID: 2738852859464785124
+      spriteID: 8dc7b49ddda0241a0800000000000000
+      internalID: -6826882137190597416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_5
+      name: awake_sprite_sheet_5
       rect:
         serializedVersion: 2
-        x: 1966
-        y: 267
-        width: 22
-        height: 18
+        x: 550
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,20 +332,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a255f5ab86d8b6d30800000000000000
-      internalID: 4425786539764569386
+      spriteID: b441824723c546d30800000000000000
+      internalID: 4423762105751573579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_6
+      name: awake_sprite_sheet_6
       rect:
         serializedVersion: 2
-        x: 3063
-        y: 271
-        width: 23
-        height: 21
+        x: 1100
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -314,20 +354,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 119f6faf5b79261c0800000000000000
-      internalID: -4511877068816451311
+      spriteID: 4c4c8f13ddd9bed70800000000000000
+      internalID: 9073519447619716292
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_7
+      name: awake_sprite_sheet_7
       rect:
         serializedVersion: 2
-        x: 876
-        y: 244
-        width: 18
-        height: 15
+        x: 1650
+        y: 1100
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -336,20 +376,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 34e095e7094377f80800000000000000
-      internalID: -8108954808857588157
+      spriteID: 2952a62a6e29c9db0800000000000000
+      internalID: -4783787184909310574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_8
+      name: awake_sprite_sheet_8
       rect:
         serializedVersion: 2
-        x: 1423
-        y: 255
-        width: 18
-        height: 15
+        x: 0
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -358,20 +398,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a70941710004b7e00800000000000000
-      internalID: 1043498107797803130
+      spriteID: 1c1a1074d9e91feb0800000000000000
+      internalID: -4687791338777632319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_9
+      name: awake_sprite_sheet_9
       rect:
         serializedVersion: 2
-        x: 1976
-        y: 239
-        width: 17
-        height: 17
+        x: 550
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -380,20 +420,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b92d8eba5660e9560800000000000000
-      internalID: 7322297077896630939
+      spriteID: 9d19e67fcd7997870800000000000000
+      internalID: 8681136732033159641
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_10
+      name: awake_sprite_sheet_10
       rect:
         serializedVersion: 2
-        x: 2521
-        y: 255
-        width: 27
-        height: 18
+        x: 1100
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -402,20 +442,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 882d20efbd82d05e0800000000000000
-      internalID: -1941850939002269048
+      spriteID: 034135f8218eca210800000000000000
+      internalID: 1345705555088577584
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_11
+      name: awake_sprite_sheet_11
       rect:
         serializedVersion: 2
-        x: 3076
-        y: 236
-        width: 19
-        height: 24
+        x: 1650
+        y: 550
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -424,20 +464,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a76fcc5245709d4d0800000000000000
-      internalID: -3109446009729780102
+      spriteID: 8f3ddfe6775b27870800000000000000
+      internalID: 8679198956464231416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_12
+      name: awake_sprite_sheet_12
       rect:
         serializedVersion: 2
-        x: 154
-        y: 11
-        width: 257
-        height: 234
+        x: 0
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -446,20 +486,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9969d0ea2b3d9de0800000000000000
-      internalID: -1324837660030047843
+      spriteID: 84c59e0370a2bba60800000000000000
+      internalID: 7690786999038991432
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_13
+      name: awake_sprite_sheet_13
       rect:
         serializedVersion: 2
-        x: 329
-        y: 231
-        width: 16
-        height: 18
+        x: 550
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -468,20 +508,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5b5b6f1d5250f72f0800000000000000
-      internalID: -973053334494202443
+      spriteID: 8e248e9243b997780800000000000000
+      internalID: -8684739758063598872
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_14
+      name: awake_sprite_sheet_14
       rect:
         serializedVersion: 2
-        x: 704
-        y: 11
-        width: 257
-        height: 234
+        x: 1100
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -490,20 +530,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8da828e9a764ce6a0800000000000000
-      internalID: -6418677876450489640
+      spriteID: 25703c85a1915a4f0800000000000000
+      internalID: -818220156348856494
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: sleeping_sprite_sheet_15
+      name: awake_sprite_sheet_15
       rect:
         serializedVersion: 2
-        x: 1254
-        y: 11
-        width: 257
-        height: 234
+        x: 1650
+        y: 0
+        width: 550
+        height: 550
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -512,74 +552,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: da36ffd3ecf2ed910800000000000000
-      internalID: 1863979858627879853
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sleeping_sprite_sheet_16
-      rect:
-        serializedVersion: 2
-        x: 1804
-        y: 11
-        width: 257
-        height: 234
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4c3c3fe055a77df20800000000000000
-      internalID: 3447358545517069252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sleeping_sprite_sheet_17
-      rect:
-        serializedVersion: 2
-        x: 2354
-        y: 11
-        width: 257
-        height: 234
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 620db3611d46223a0800000000000000
-      internalID: -6691675247135174618
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: sleeping_sprite_sheet_18
-      rect:
-        serializedVersion: 2
-        x: 2904
-        y: 11
-        width: 257
-        height: 234
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 159670e511124db90800000000000000
-      internalID: -7218107944292357807
+      spriteID: aa92c9a64e688b930800000000000000
+      internalID: 4159222571475937706
       vertices: []
       indices: 
       edges: []
@@ -588,7 +562,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7c3e82a40b984424590b17b8d74b04a4
     internalID: 0
     vertices: []
     indices: 
@@ -597,7 +571,23 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      awake_sprite_sheet_0: 1063356459280790430
+      awake_sprite_sheet_1: -3601693801899416141
+      awake_sprite_sheet_10: 1345705555088577584
+      awake_sprite_sheet_11: 8679198956464231416
+      awake_sprite_sheet_12: 7690786999038991432
+      awake_sprite_sheet_13: -8684739758063598872
+      awake_sprite_sheet_14: -818220156348856494
+      awake_sprite_sheet_15: 4159222571475937706
+      awake_sprite_sheet_2: -2440090993173382246
+      awake_sprite_sheet_3: 6630270631597021774
+      awake_sprite_sheet_4: -6826882137190597416
+      awake_sprite_sheet_5: 4423762105751573579
+      awake_sprite_sheet_6: 9073519447619716292
+      awake_sprite_sheet_7: -4783787184909310574
+      awake_sprite_sheet_8: -4687791338777632319
+      awake_sprite_sheet_9: 8681136732033159641
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

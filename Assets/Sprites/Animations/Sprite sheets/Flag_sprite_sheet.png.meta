@@ -3,20 +3,20 @@ guid: 96cab86227cc96744a93f929a703cd99
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3360143598764226779
-    second: Flag_sprite_sheet_0
+      213: -3984930620756493077
+    second: flag_sprite_sheet_0
   - first:
-      213: 2900179269331742008
-    second: Flag_sprite_sheet_1
+      213: -5314533850208752814
+    second: flag_sprite_sheet_1
   - first:
-      213: -6963304621153739323
-    second: Flag_sprite_sheet_2
+      213: -7092445549703804571
+    second: flag_sprite_sheet_2
   - first:
-      213: 3720446476081538514
-    second: Flag_sprite_sheet_3
+      213: -2583607520368669365
+    second: flag_sprite_sheet_3
   - first:
-      213: 724439069866907648
-    second: Flag_sprite_sheet_4
+      213: 7667355884182391437
+    second: flag_sprite_sheet_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +63,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 120
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -121,17 +121,30 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Flag_sprite_sheet_0
+      name: flag_sprite_sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 72
-        width: 398
-        height: 319
+        y: 465
+        width: 547
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +153,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5270b51233f5e51d0800000000000000
-      internalID: -3360143598764226779
+      spriteID: bec7b37a6bea2b8c0800000000000000
+      internalID: -3984930620756493077
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag_sprite_sheet_1
+      name: flag_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 546
-        y: 75
-        width: 404
-        height: 321
+        x: 547
+        y: 465
+        width: 547
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +175,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 83d687dfda18f3820800000000000000
-      internalID: 2900179269331742008
+      spriteID: 25ba48fee9bfe36b0800000000000000
+      internalID: -5314533850208752814
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag_sprite_sheet_2
+      name: flag_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 1093
-        y: 84
-        width: 402
-        height: 302
+        x: 1094
+        y: 465
+        width: 547
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5cd9b49175f5d5f90800000000000000
-      internalID: -6963304621153739323
+      spriteID: 569ca159952929d90800000000000000
+      internalID: -7092445549703804571
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag_sprite_sheet_3
+      name: flag_sprite_sheet_3
       rect:
         serializedVersion: 2
-        x: 1640
-        y: 76
-        width: 402
-        height: 306
+        x: 0
+        y: 0
+        width: 547
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +219,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2d5a1b4bb5ea1a330800000000000000
-      internalID: 3720446476081538514
+      spriteID: b4dc56516ae252cd0800000000000000
+      internalID: -2583607520368669365
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Flag_sprite_sheet_4
+      name: flag_sprite_sheet_4
       rect:
         serializedVersion: 2
-        x: 2187
-        y: 67
-        width: 399
-        height: 317
+        x: 547
+        y: 0
+        width: 547
+        height: 465
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,8 +241,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 008d4dcee79bd0a00800000000000000
-      internalID: 724439069866907648
+      spriteID: d8a4133ad8be76a60800000000000000
+      internalID: 7667355884182391437
       vertices: []
       indices: 
       edges: []
@@ -238,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: febf57cd692d7234cac588294c02016f
     internalID: 0
     vertices: []
     indices: 
@@ -247,7 +260,12 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      flag_sprite_sheet_0: -3984930620756493077
+      flag_sprite_sheet_1: -5314533850208752814
+      flag_sprite_sheet_2: -7092445549703804571
+      flag_sprite_sheet_3: -2583607520368669365
+      flag_sprite_sheet_4: 7667355884182391437
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

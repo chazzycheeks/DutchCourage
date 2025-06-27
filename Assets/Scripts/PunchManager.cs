@@ -6,7 +6,9 @@ public class PunchManager : MonoBehaviour
     public ScoreManager scoreManager;
     public HealthManager healthManager;
     public DutchCourageMeter dutchCourageMeter;
-   // public ShipHealth shipHealth;
+
+    public Animator player;
+    // public ShipHealth shipHealth;
     private void Start()
     {
        /* scoreManager = GetComponent<ScoreManager>();
@@ -46,6 +48,7 @@ public class PunchManager : MonoBehaviour
     }
     private IEnumerator HighCourageHit(ShipHealth shipHealth)
     {
+        player.SetTrigger("punchcourageous");
         scoreManager.AddScore1();
         //play animation ship getting hit
         yield return new WaitForSeconds(2f);
@@ -57,6 +60,7 @@ public class PunchManager : MonoBehaviour
     }
     private IEnumerator MidCourageHit(ShipHealth shipHealth)
     {
+        player.SetTrigger("punchnormal");
         scoreManager.AddScore1();
         //play animation ship getting hit
         yield return new WaitForSeconds(2f);
@@ -71,12 +75,13 @@ public class PunchManager : MonoBehaviour
     }
     private void LowCourageHit()
     {
+        player.SetTrigger("punchlow");
         scoreManager.AddScore1();
         //play animation cannonball falling in water
     }
     private void TooMuchCourageHit()
     {
+        player.SetTrigger("punchdrunk");
         healthManager.TakeTwoDamage();
-        //play animation player missing canonball 
     }
 }

@@ -4,18 +4,20 @@ public class DutchCourageMeter : MonoBehaviour
 {
     public float maxCourage = 35f;
     public float minCourage = 0f;
-    public float startingCourage = 30f;
+    public float startingCourage = 21f;
     public float currentCourage;
 
     public PlayerMovement refillPosition;
 
+    public Animator player;
+
     private void Start()
     {
         currentCourage = startingCourage;
-     
     }
     private void Update()
     {
+        player.SetFloat("DutchCourage", currentCourage);
         MeterDepletion();
 
         if (refillPosition.refilling == true)
@@ -23,6 +25,9 @@ public class DutchCourageMeter : MonoBehaviour
             RefillCourage();
         }
         currentCourage = Mathf.Clamp(currentCourage, minCourage, maxCourage);
+
+        
+
     }
     public void RefillCourage()
     {
@@ -38,12 +43,12 @@ public class DutchCourageMeter : MonoBehaviour
 
         else if (currentCourage <= 30f)
         {
-            currentCourage += Time.deltaTime * 11f;
+            currentCourage += Time.deltaTime * 13f;
         }
 
         else if (currentCourage <= 35f)
         {
-            currentCourage += Time.deltaTime * 13f;
+            currentCourage += Time.deltaTime * 15f;
         }
     }
 
