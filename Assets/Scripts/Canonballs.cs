@@ -1,14 +1,14 @@
-using System.Collections;
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 public class Canonballs : MonoBehaviour
 {
     [SerializeField] private List<Transform> canonballSpawnPoints =new();
     public List<Transform> warningSpawnPoints =new();
-    public GameObject CanonballPrefab;
-    public GameObject WarningPrefab;
+    //public List<Transform> hitSpawnPoints = new();
+    public GameObject canonballPrefab;
+    public GameObject warningPrefab;
+    public GameObject hitPrefab;
     
     private float ballDelay;
     public bool isFalling;
@@ -48,7 +48,7 @@ public class Canonballs : MonoBehaviour
         if (spawningAllowed == true)
         {
             int canonballSpawner = Random.Range(0, canonballSpawnPoints.Count);
-            GameObject newCanonball = Instantiate(CanonballPrefab, canonballSpawnPoints[canonballSpawner]);
+            GameObject newCanonball = Instantiate(canonballPrefab, canonballSpawnPoints[canonballSpawner]);
             
             SpawnWarning(canonballSpawner);
 
@@ -57,10 +57,9 @@ public class Canonballs : MonoBehaviour
             //And assign that shipHealth to the new cannonball
             int index = Random.Range(0, shipSpawner.ships.Count);
             newCanonball.GetComponent<Projectile>().shipHealth = shipSpawner.ships[index];
-            shipHealth.ShipFire();
+            //shipHealth.ShipFire();
         }
 
-        //Have the ball delay be affected by how many items are in the ShipSpawner's list of ships
         if (shipSpawner.ships.Count == 1)
         {
             ballDelay = Random.Range(4, 5);
@@ -79,13 +78,14 @@ public class Canonballs : MonoBehaviour
     }
     public void SpawnWarning(int index)
     {
-        Instantiate(WarningPrefab, warningSpawnPoints[index]);
-        
-        
-        //have the warning prefabs spawn on the warningspawnpoint that has the same int that a canonball has just spawned from on the canonballspawnpoints
-        //remove the warning just before a canonball enters the frame
+        Instantiate(warningPrefab, warningSpawnPoints[index]);
 
     }
+
+    /*public void SpawnHitEffect(int index)
+    {
+        Instantiate(hitPrefab, hitSpawnPoints[index]);
+    }*/
 
   
 }

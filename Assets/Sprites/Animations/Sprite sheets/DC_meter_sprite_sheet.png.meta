@@ -78,7 +78,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -135,10 +135,10 @@ TextureImporter:
       name: DC_meter_sprite_sheet_0
       rect:
         serializedVersion: 2
-        x: 52
-        y: 461
-        width: 1371
-        height: 194
+        x: 0
+        y: 400
+        width: 1440
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +157,10 @@ TextureImporter:
       name: DC_meter_sprite_sheet_1
       rect:
         serializedVersion: 2
-        x: 1493
-        y: 465
-        width: 1354
-        height: 184
+        x: 1440
+        y: 400
+        width: 1440
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,10 +179,10 @@ TextureImporter:
       name: DC_meter_sprite_sheet_2
       rect:
         serializedVersion: 2
-        x: 58
-        y: 68
-        width: 1343
-        height: 187
+        x: 0
+        y: 0
+        width: 1440
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -201,7 +201,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3f562a53136113640918cb71e8013f21
     internalID: 0
     vertices: []
     indices: 
@@ -210,7 +210,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DC_meter_sprite_sheet_0: -2457227608990786328
+      DC_meter_sprite_sheet_1: 2318770205661215926
+      DC_meter_sprite_sheet_2: -2389735762868550201
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
