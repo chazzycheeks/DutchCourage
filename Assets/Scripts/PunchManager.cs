@@ -9,12 +9,15 @@ public class PunchManager : MonoBehaviour
 
     public Animator player;
     public Animator splash;
-   // public ShipHealth shipHealth;
+    public Animator hit;
+    public ShipHealth shipHealth;
     private void Start()
     {
        /* scoreManager = GetComponent<ScoreManager>();
         healthManager = GetComponent<HealthManager>();*/
     }
+
+  
     private void OnCollisionEnter2D(Collision2D collision)
     {
 
@@ -83,6 +86,7 @@ public class PunchManager : MonoBehaviour
     private void TooMuchCourageHit()
     {
         player.SetTrigger("punchdrunk");
+        hit.SetTrigger("shipHit");
         healthManager.TakeTwoDamage();
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4884840555113027043}
   - component: {fileID: -5178355623537534636}
   - component: {fileID: -4353648455847044898}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Canonball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -176,3 +176,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shipHealth: {fileID: 0}
+  cannonball: {fileID: 0}

@@ -14,7 +14,7 @@ public class Canonballs : MonoBehaviour
     public bool isFalling;
 
     private ShipSpawner shipSpawner;
-    [SerializeField] private ShipHealth shipHealth;
+    
     
     private bool spawningAllowed = false;  
 
@@ -36,6 +36,7 @@ public class Canonballs : MonoBehaviour
         {
             spawningAllowed = true ;
         }
+
     }
 
 
@@ -57,7 +58,7 @@ public class Canonballs : MonoBehaviour
             //And assign that shipHealth to the new cannonball
             int index = Random.Range(0, shipSpawner.ships.Count);
             newCanonball.GetComponent<Projectile>().shipHealth = shipSpawner.ships[index];
-            //shipHealth.ShipFire();
+            newCanonball.GetComponent<Projectile>().shipHealth.ShipFire();
         }
 
         if (shipSpawner.ships.Count == 1)
