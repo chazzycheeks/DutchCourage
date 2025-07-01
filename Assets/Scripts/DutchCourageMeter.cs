@@ -20,7 +20,6 @@ public class DutchCourageMeter : MonoBehaviour
     }
     private void Update()
     {
-        //float refill = dutchCouragefillAmount.fillAmount;
         dutchCouragefillAmount.fillAmount = currentCourage / 35f;
         player.SetFloat("DutchCourage", currentCourage);
         MeterDepletion();
