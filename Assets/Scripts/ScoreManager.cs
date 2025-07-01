@@ -1,14 +1,19 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ScoreManager : MonoBehaviour
 {
     [SerializeField] private TextMeshProUGUI highScoreText;
     public int score;
+    public GameObject mainGame;
+    public GameObject endScreen;
 
     private void Start()
     {
         UpdateHighScoreText();
+        mainGame.SetActive(true);
+        endScreen.SetActive(false);
     }
 
     public void ResetScore()
@@ -40,5 +45,21 @@ public class ScoreManager : MonoBehaviour
     {
         highScoreText.text = $"{PlayerPrefs.GetInt("HighScore", 0)}";
 
+    }
+
+    public void GameOver()
+    {
+        mainGame.SetActive(false);
+        endScreen.SetActive(true);
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
     }
 }

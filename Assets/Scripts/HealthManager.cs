@@ -8,6 +8,8 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private List<GameObject> backgrounds = new List<GameObject>();
     [SerializeField] private GameObject currentBackground;
 
+    public ScoreManager scoreManager;
+
     private void Start()
     {
         canonballSpawner = FindAnyObjectByType<Canonballs>();
@@ -16,9 +18,10 @@ public class HealthManager : MonoBehaviour
     }
     private void Update()
     {
-        if (health == 11)
+        if (health >= 11)
         {
             canonballSpawner.isFalling = false;
+            scoreManager.GameOver();
         }
     }
     public void TakeOneDamage()

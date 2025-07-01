@@ -24,6 +24,7 @@ public class PunchManager : MonoBehaviour
         var gravity = collision.gameObject.GetComponent<Rigidbody2D>();
         gravity.gravityScale = -4;
         ShipHealth shipHealth = collision.gameObject.GetComponent<Projectile>().shipHealth;
+        
 
         if (dutchCourageMeter.currentCourage <= 10f)
         {
@@ -54,6 +55,7 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchcourageous");
         scoreManager.AddScore1();
+        if (shipHealth == null) yield return null;
         yield return new WaitForSeconds(1.7f);
         shipHealth.ShipHit();
         shipHealth.StartCoroutine(shipHealth.DestroyShip());
@@ -65,6 +67,7 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchnormal");
         scoreManager.AddScore1();
+        if (shipHealth == null) yield return null;
         yield return new WaitForSeconds(1.7f);
         shipHealth.ShipHit();
         shipHealth.shipHealth--;

@@ -29,7 +29,7 @@ public class ShipHealth : MonoBehaviour
     {
         if (shipSpawner.ships.Count == 0)
         {
-            yield break;
+            yield return null;
         }
         Debug.Log("shipisdestroyed");
         enemyShip.SetTrigger("destroy");

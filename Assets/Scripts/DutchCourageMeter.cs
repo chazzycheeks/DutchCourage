@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DutchCourageMeter : MonoBehaviour
 {
@@ -6,6 +7,7 @@ public class DutchCourageMeter : MonoBehaviour
     public float minCourage = 0f;
     public float startingCourage = 21f;
     public float currentCourage;
+    public Image dutchCouragefillAmount;
 
     public PlayerMovement refillPosition;
 
@@ -14,11 +16,15 @@ public class DutchCourageMeter : MonoBehaviour
     private void Start()
     {
         currentCourage = startingCourage;
+        
     }
     private void Update()
     {
+        //float refill = dutchCouragefillAmount.fillAmount;
+        dutchCouragefillAmount.fillAmount = currentCourage / 35f;
         player.SetFloat("DutchCourage", currentCourage);
         MeterDepletion();
+
 
         if (refillPosition.refilling == true)
         {
