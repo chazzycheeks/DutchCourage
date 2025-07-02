@@ -36,9 +36,7 @@ public class Canonballs : MonoBehaviour
         {
             spawningAllowed = true ;
         }
-
     }
-
 
     public void SpawnCanonball()
     {
@@ -61,32 +59,27 @@ public class Canonballs : MonoBehaviour
             newCanonball.GetComponent<Projectile>().shipHealth.ShipFire();
         }
 
-        if (shipSpawner.ships.Count == 1)
-        {
-            ballDelay = Random.Range(4, 5);
-        }
-        if (shipSpawner.ships.Count == 2)
-        {
-            ballDelay = Random.Range(2.5f, 3);
-        }
-        if (shipSpawner.ships.Count == 3)
-        {
-            ballDelay = Random.Range(1, 2);
-        }
-        Invoke(nameof(SpawnCanonball), ballDelay);
+            if (shipSpawner.ships.Count == 1)
+            {
+                ballDelay = 4;
+            }
+            if (shipSpawner.ships.Count == 2)
+            {
+                ballDelay = 2.5f;
+            }
+            if (shipSpawner.ships.Count == 3)
+            {
+                ballDelay = 1.7f;
+            }  
 
-      
+            Invoke(nameof(SpawnCanonball), ballDelay);    
     }
+
     public void SpawnWarning(int index)
     {
         Instantiate(warningPrefab, warningSpawnPoints[index]);
 
     }
-
-    /*public void SpawnHitEffect(int index)
-    {
-        Instantiate(hitPrefab, hitSpawnPoints[index]);
-    }*/
 
   
 }

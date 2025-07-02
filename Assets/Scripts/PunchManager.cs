@@ -56,7 +56,7 @@ public class PunchManager : MonoBehaviour
         player.SetTrigger("punchcourageous");
         scoreManager.AddScore1();
         if (shipHealth == null) yield return null;
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.5f);
         shipHealth.ShipHit();
         shipHealth.StartCoroutine(shipHealth.DestroyShip());
         scoreManager.AddScore2();
@@ -68,7 +68,7 @@ public class PunchManager : MonoBehaviour
         player.SetTrigger("punchnormal");
         scoreManager.AddScore1();
         if (shipHealth == null) yield return null;
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.5f);
         shipHealth.ShipHit();
         shipHealth.shipHealth--;
         if (shipHealth.shipHealth <= 0)
@@ -82,7 +82,7 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchlow");
         scoreManager.AddScore1();
-        yield return new WaitForSeconds(1.7f);
+        yield return new WaitForSeconds(1.2f);
         splash.SetTrigger("splash");
         //play animation cannonball falling in water
     }
@@ -90,6 +90,11 @@ public class PunchManager : MonoBehaviour
     {
         player.SetTrigger("punchdrunk");
         hit.SetTrigger("shipHit");
-        healthManager.TakeTwoDamage();
+        if (scoreManager.score > 50)
+        {
+            healthManager.TakeThreeDamage();
+        }
+
+        else healthManager.TakeTwoDamage();
     }
 }

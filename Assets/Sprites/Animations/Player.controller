@@ -379,7 +379,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: DutchCourage
-    m_EventTreshold: 30
+    m_EventTreshold: 29
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3306884897456072349}
   m_Solo: 0
@@ -803,7 +803,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: DutchCourage
-    m_EventTreshold: 30
+    m_EventTreshold: 29
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -7788773580943302759}
   m_Solo: 0

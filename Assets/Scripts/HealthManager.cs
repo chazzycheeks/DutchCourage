@@ -57,6 +57,17 @@ public class HealthManager : MonoBehaviour
 
     public void TakeThreeDamage()
     {
-        health = health + 3;
+        if (health <= backgrounds.Count)
+        {
+            if (currentBackground != null)
+            {
+                currentBackground.SetActive(false);
+            }
+
+            health = health + 3;
+            currentBackground = backgrounds[health];
+            currentBackground.SetActive(true);
+        }
     }
+
 }

@@ -12,6 +12,7 @@ public class DutchCourageMeter : MonoBehaviour
     public PlayerMovement refillPosition;
 
     public Animator player;
+    public ScoreManager scoreManager;
 
     private void Start()
     {
@@ -38,27 +39,32 @@ public class DutchCourageMeter : MonoBehaviour
     {
         if (currentCourage <= 10f)
         {
-            currentCourage += Time.deltaTime * 4f;
+            currentCourage += Time.deltaTime * 8f;
         }
 
         else if (currentCourage <= 20f)
         {
-            currentCourage += Time.deltaTime * 7f;
+            currentCourage += Time.deltaTime * 10f;
         }
 
-        else if (currentCourage <= 30f)
+        else if (currentCourage <= 29f)
         {
-            currentCourage += Time.deltaTime * 13f;
+            currentCourage += Time.deltaTime * 19f;
         }
 
         else if (currentCourage <= 35f)
         {
-            currentCourage += Time.deltaTime * 15f;
+            currentCourage += Time.deltaTime * 23f;
         }
     }
 
     public void MeterDepletion()
     {
-        currentCourage -= Time.deltaTime;
+        if (scoreManager.score > 50)
+        {
+            currentCourage -= Time.deltaTime * 2.5f;
+        }
+
+        else currentCourage -= Time.deltaTime;
     }
 }

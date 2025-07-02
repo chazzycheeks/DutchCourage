@@ -18,7 +18,7 @@ public class ShipHealth : MonoBehaviour
     }
     public void ShipFire()
     {
-        if (shipFire.gameObject.activeSelf) shipFire.gameObject.SetActive(true);
+        //if (shipFire.gameObject.activeSelf) shipFire.gameObject.SetActive(true);
         shipFire.SetTrigger("fire");
     }
     public void ShipHit()

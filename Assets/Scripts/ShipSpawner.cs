@@ -15,6 +15,7 @@ public class ShipSpawner : MonoBehaviour
     public List<ShipSpawnPoint> spawns = new();
     public GameObject shipPrefab;
     //public Canonballs canonballs;
+    public ScoreManager scoreManager;
 
     //A list of all ships currently spawned
     public List<ShipHealth> ships = new();
@@ -44,15 +45,28 @@ public class ShipSpawner : MonoBehaviour
                 //Add this new ship to the list of spawned ships
                 ships.Add(newShip.GetComponent<ShipHealth>());
 
-                //canonballs.SpawnCanonball();
-
                 break;
             }
             
         }
-        yield return new WaitForSeconds(8f);
+        if (scoreManager.score > 30)
+        {
+            yield return new WaitForSeconds(3f);
+        }
 
-        shipSpawnCoroutine = null;
+        else if (scoreManager.score > 60)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+        else if (scoreManager.score > 100)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+
+        else yield return new WaitForSeconds(4f);
+
+
+            shipSpawnCoroutine = null;
     }
 
 }
