@@ -13,11 +13,8 @@ public class PlayerMovement : MonoBehaviour
     public Animator playerAnim;
     public Animator closeUp;
     public Animator cameraAnim;
-    //Transform which is our down position
-
-    //Array of transforms which are used for the lanes (all lanes)
-
-    //Int which keeps track of which lane we are in (current lane)
+    
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -51,7 +48,7 @@ public class PlayerMovement : MonoBehaviour
         {
             case "Right":
                 if (refilling) return;
-               
+                audioManager.PlayMove();
                 currentLane++;
                 if (currentLane > 2)
                 {
@@ -62,22 +59,27 @@ public class PlayerMovement : MonoBehaviour
 
             case "Left":
                 if (refilling) return;
+                audioManager.PlayMove();
                 currentLane--;
                 if (currentLane < 0)
                 {
-                    currentLane++;
+                    currentLane++;     
                 }
                 player.transform.position = lanes[currentLane].position;
                 break;
 
             case "Down":
                 player.transform.position = refillMeterPosition.position;
+                audioManager.PlayMove();
+                audioManager.PlaySwig();
+                audioManager.PlayGlug();
                 refilling = true;
                 break;
 
             case "Up":
                 refilling = false;
                 player.transform.position = lanes[currentLane].position;
+                audioManager.PlayMove();
                 break;
         }
     }

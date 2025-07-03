@@ -14,6 +14,7 @@ public class Canonballs : MonoBehaviour
     public bool isFalling;
 
     private ShipSpawner shipSpawner;
+    public AudioManager audioManager;
     
     
     private bool spawningAllowed = false;  
@@ -78,7 +79,7 @@ public class Canonballs : MonoBehaviour
     public void SpawnWarning(int index)
     {
         Instantiate(warningPrefab, warningSpawnPoints[index]);
-
+        audioManager.PlayAlert();
     }
 
   

@@ -9,6 +9,7 @@ public class HealthManager : MonoBehaviour
     [SerializeField] private GameObject currentBackground;
 
     public ScoreManager scoreManager;
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -33,6 +34,7 @@ public class HealthManager : MonoBehaviour
                 currentBackground.SetActive(false);
             }
 
+            audioManager.PlayPlayerHit();
             health++;
             currentBackground = backgrounds[health];
             currentBackground.SetActive(true);
@@ -49,6 +51,7 @@ public class HealthManager : MonoBehaviour
                 currentBackground.SetActive(false);
             }
 
+            audioManager.PlayPlayerHit();
             health = health + 2;
             currentBackground = backgrounds[health];
             currentBackground.SetActive(true);
@@ -64,6 +67,7 @@ public class HealthManager : MonoBehaviour
                 currentBackground.SetActive(false);
             }
 
+            audioManager.PlayPlayerHit();
             health = health + 3;
             currentBackground = backgrounds[health];
             currentBackground.SetActive(true);

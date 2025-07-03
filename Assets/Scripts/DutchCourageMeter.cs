@@ -13,6 +13,7 @@ public class DutchCourageMeter : MonoBehaviour
 
     public Animator player;
     public ScoreManager scoreManager;
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -30,6 +31,8 @@ public class DutchCourageMeter : MonoBehaviour
         {
             RefillCourage();
         }
+
+        //currentCourange += Time.deltaTime * depletionFactor * refillFactor;
         currentCourage = Mathf.Clamp(currentCourage, minCourage, maxCourage);
 
         
@@ -37,6 +40,7 @@ public class DutchCourageMeter : MonoBehaviour
     }
     public void RefillCourage()
     {
+        
         if (currentCourage <= 10f)
         {
             currentCourage += Time.deltaTime * 8f;
@@ -56,15 +60,18 @@ public class DutchCourageMeter : MonoBehaviour
         {
             currentCourage += Time.deltaTime * 23f;
         }
+
+        
     }
 
     public void MeterDepletion()
     {
+        float depletionFactor = 1f;
         if (scoreManager.score > 50)
         {
-            currentCourage -= Time.deltaTime * 2.5f;
+            depletionFactor = 2.5f;
         }
 
-        else currentCourage -= Time.deltaTime;
+        currentCourage -= Time.deltaTime * depletionFactor;
     }
 }

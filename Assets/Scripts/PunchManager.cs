@@ -1,4 +1,5 @@
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 public class PunchManager : MonoBehaviour
@@ -6,11 +7,12 @@ public class PunchManager : MonoBehaviour
     public ScoreManager scoreManager;
     public HealthManager healthManager;
     public DutchCourageMeter dutchCourageMeter;
+    public ShipHealth shipHealth;
+    public AudioManager audioManager;
 
     public Animator player;
     public Animator splash;
     public Animator hit;
-    public ShipHealth shipHealth;
     private void Start()
     {
        /* scoreManager = GetComponent<ScoreManager>();
@@ -54,9 +56,11 @@ public class PunchManager : MonoBehaviour
     private IEnumerator HighCourageHit(ShipHealth shipHealth)
     {
         player.SetTrigger("punchcourageous");
+        audioManager.PlayPunch();
+        audioManager.PlayHighYaar();
         scoreManager.AddScore1();
-        if (shipHealth == null) yield return null;
         yield return new WaitForSeconds(1.5f);
+        if (shipHealth == null) yield break;
         shipHealth.ShipHit();
         shipHealth.StartCoroutine(shipHealth.DestroyShip());
         scoreManager.AddScore2();
@@ -66,9 +70,11 @@ public class PunchManager : MonoBehaviour
     private IEnumerator MidCourageHit(ShipHealth shipHealth)
     {
         player.SetTrigger("punchnormal");
+        audioManager.PlayPunch();
+        audioManager.PlayMidYaar();
         scoreManager.AddScore1();
-        if (shipHealth == null) yield return null;
         yield return new WaitForSeconds(1.5f);
+        if (shipHealth == null) yield break;
         shipHealth.ShipHit();
         shipHealth.shipHealth--;
         if (shipHealth.shipHealth <= 0)
@@ -81,14 +87,18 @@ public class PunchManager : MonoBehaviour
     private IEnumerator LowCourageHit()
     {
         player.SetTrigger("punchlow");
+        audioManager.PlayPunch();
+        audioManager.PlayLowYaar();
         scoreManager.AddScore1();
         yield return new WaitForSeconds(1.2f);
         splash.SetTrigger("splash");
+        audioManager.PlaySplash();
         //play animation cannonball falling in water
     }
     private void TooMuchCourageHit()
     {
         player.SetTrigger("punchdrunk");
+        audioManager.PlayDrunkYaar();
         hit.SetTrigger("shipHit");
         if (scoreManager.score > 50)
         {
