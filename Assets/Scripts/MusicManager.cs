@@ -6,11 +6,28 @@ public class MusicManager : MonoBehaviour
 {
     [SerializeField] private List<AudioSource> musicSources = new List<AudioSource>();
     public DutchCourageMeter DutchCourageMeter;
+    public PauseMenu PauseMenu;
 
     
     private void Update()
     {
         SwitchingTracks();
+        if (PauseMenu.isPaused == true)
+        {
+            foreach (AudioSource musicSource in musicSources)
+            {
+                musicSource.Pause();
+            }
+           
+        }
+        else if (PauseMenu.isPaused == false)
+        {
+            foreach (AudioSource musicSource in musicSources)
+            {
+                musicSource.UnPause();
+            }
+        }
+        
     }
 
     private void SwitchingTracks()

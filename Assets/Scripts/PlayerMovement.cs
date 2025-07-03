@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     public Transform refillMeterPosition;
     public bool refilling;
     [SerializeField] private bool canMove;
+    private bool hasAwoken = false;
+    public PauseMenu PauseMenu;
 
     public Animator playerAnim;
     public Animator closeUp;
@@ -26,10 +28,18 @@ public class PlayerMovement : MonoBehaviour
         playerAnim.SetBool("isRefilling", refilling);
         closeUp.SetBool("isRefilling", refilling);
         cameraAnim.SetBool("isRefilling", refilling);
+
+        if (!hasAwoken) return;
+        if (PauseMenu.isPaused == true)
+        {
+            canMove = false;
+        }
+        else canMove = true;
     }
     private void OnEnable()
     {
         InputManager.OnSwipe += ProcessSwipe;
+        
     }
 
     private void OnDisable()
@@ -37,10 +47,7 @@ public class PlayerMovement : MonoBehaviour
         InputManager.OnSwipe -= ProcessSwipe;
     }
 
-    public void ToggleMovement()
-    {
-        canMove = !canMove;
-    }
+    public void ToggleMovement() => hasAwoken = true;
     private void ProcessSwipe(string direction)
     {
         if (!canMove) { return; }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public struct Sound
+public class Sound
 {
     public string id;
     public AudioClip clip;
@@ -13,7 +13,6 @@ public struct Sound
 public class AudioManager : MonoBehaviour
 {
     public List<Sound> soundList;
-    //public List<AudioSource> audioSources;
     public MusicManager musicManager;
 
     private void Start()
@@ -92,23 +91,21 @@ public class AudioManager : MonoBehaviour
         //Local variable which stores the audiosource we're going to play on
         //go through the list of audio sources (for or foreach loop)
         //Once you have found one that isn't playing - play on that one
-           
-                AudioSource audioSource = GetComponent<AudioSource>();
 
-                Sound soundToPlay = FindSoundWithId(targetId, audioSource);
+        AudioSource audioSource = GetComponent<AudioSource>();
 
-                //if (soundToPlay == null)
-                //{
-                //    return;
-                //}
+        Sound soundToPlay = FindSoundWithId(targetId, audioSource);
 
-                audioSource.PlayOneShot(soundToPlay.clip, soundToPlay.volume);
+        if (soundToPlay == null)
+        {
+            return;
+        }
 
-                return;
-            
+        audioSource.PlayOneShot(soundToPlay.clip, soundToPlay.volume);
 
-
+        return;
     }
+
     private Sound FindSoundWithId(string targetId, AudioSource source)
     {
         foreach (Sound sound in soundList)
@@ -121,7 +118,7 @@ public class AudioManager : MonoBehaviour
             return sound;
         }
 
-        return soundList[0];
+        return null;
     }
     private IEnumerator DelayMusicStart()
     {
