@@ -49,19 +49,19 @@ public class ShipSpawner : MonoBehaviour
             }
             
         }
-        if (scoreManager.score > 30)
+        if (scoreManager.score > 100)
+        {
+            yield return new WaitForSeconds(0.5f);
+        }
+        else if (scoreManager.score > 80)
+        {
+            yield return new WaitForSeconds(1f);
+        }
+        else if (scoreManager.score > 50)
         {
             yield return new WaitForSeconds(3f);
         }
 
-        else if (scoreManager.score > 60)
-        {
-            yield return new WaitForSeconds(1f);
-        }
-        else if (scoreManager.score > 100)
-        {
-            yield return new WaitForSeconds(0.1f);
-        }
 
         else yield return new WaitForSeconds(4f);
 

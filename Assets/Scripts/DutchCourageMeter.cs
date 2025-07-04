@@ -40,36 +40,89 @@ public class DutchCourageMeter : MonoBehaviour
     }
     public void RefillCourage()
     {
-        
-        if (currentCourage <= 10f)
+        float increaseFactor = 1f;
+        if (scoreManager.score > 100)
         {
-            currentCourage += Time.deltaTime * 8f;
+            if (currentCourage <= 10f)
+            {
+                increaseFactor = 24f;
+            }
+
+            else if (currentCourage <= 20f)
+            {
+                increaseFactor = 30f;
+            }
+
+            else if (currentCourage <= 29f)
+            {
+                increaseFactor = 60f;
+            }
+
+            else if (currentCourage <= 35f)
+            {
+                increaseFactor = 75f;
+            }
         }
 
-        else if (currentCourage <= 20f)
+        else if (scoreManager.score > 50)
         {
-            currentCourage += Time.deltaTime * 10f;
+            if (currentCourage <= 10f)
+            {
+                increaseFactor = 17.6f;
+            }
+
+            else if (currentCourage <= 20f)
+            {
+                increaseFactor = 20f;
+            }
+
+            else if (currentCourage <= 29f)
+            {
+                increaseFactor = 40f;
+            }
+
+            else if (currentCourage <= 35f)
+            {
+                increaseFactor = 50f;
+            }
         }
 
-        else if (currentCourage <= 29f)
+        else
         {
-            currentCourage += Time.deltaTime * 19f;
+            if (currentCourage <= 10f)
+            {
+                increaseFactor = 8f;
+            }
+
+            else if (currentCourage <= 20f)
+            {
+                increaseFactor = 10f;
+            }
+
+            else if (currentCourage <= 29f)
+            {
+                increaseFactor = 20f;
+            }
+
+            else if (currentCourage <= 35f)
+            {
+                increaseFactor = 25f;
+            }
         }
 
-        else if (currentCourage <= 35f)
-        {
-            currentCourage += Time.deltaTime * 23f;
-        }
-
-        
+        currentCourage += Time.deltaTime * increaseFactor;
     }
 
     public void MeterDepletion()
     {
         float depletionFactor = 1f;
-        if (scoreManager.score > 50)
+        if (scoreManager.score > 100)
         {
-            depletionFactor = 2.5f;
+            depletionFactor = 3f;
+        }
+        else if (scoreManager.score > 50)
+        {
+            depletionFactor = 2.2f;
         }
 
         currentCourage -= Time.deltaTime * depletionFactor;

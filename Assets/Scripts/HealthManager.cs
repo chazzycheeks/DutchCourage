@@ -24,9 +24,14 @@ public class HealthManager : MonoBehaviour
             canonballSpawner.isFalling = false;
             scoreManager.GameOver();
         }
+        
     }
     public void TakeOneDamage()
     {
+        if (health > backgrounds.Count)
+        {
+            return;
+        }
         if (health <= backgrounds.Count)
         {
             if (currentBackground != null)
@@ -44,6 +49,10 @@ public class HealthManager : MonoBehaviour
 
     public void TakeTwoDamage()
     {
+        if (health > backgrounds.Count)
+        {
+            return;
+        }
         if (health <= backgrounds.Count)
         {
             if (currentBackground != null)
@@ -60,6 +69,10 @@ public class HealthManager : MonoBehaviour
 
     public void TakeThreeDamage()
     {
+        if (health > backgrounds.Count)
+        {
+            return;
+        }
         if (health <= backgrounds.Count)
         {
             if (currentBackground != null)

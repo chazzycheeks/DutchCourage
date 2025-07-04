@@ -3405,8 +3405,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 3f9d4e0f5f60ce845b1023cd670867e1, type: 3}
-  m_Resource: {fileID: 8300000, guid: 3f9d4e0f5f60ce845b1023cd670867e1, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2fa3dc4560bd48043a1975d0b7e53c65, type: 3}
+  m_Resource: {fileID: 8300000, guid: 2fa3dc4560bd48043a1975d0b7e53c65, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -3720,8 +3720,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: fcc4cfde24971e44699e56e1f0fccd1f, type: 3}
-  m_Resource: {fileID: 8300000, guid: fcc4cfde24971e44699e56e1f0fccd1f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f5450b4b7378e6f479d1e86db7b254a4, type: 3}
+  m_Resource: {fileID: 8300000, guid: f5450b4b7378e6f479d1e86db7b254a4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -5063,6 +5063,104 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2102034514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1429164472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1429164473}
+  - component: {fileID: 1429164476}
+  - component: {fileID: 1429164475}
+  - component: {fileID: 1429164474}
+  m_Layer: 5
+  m_Name: pause player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1429164473
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429164472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1689474064}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: -20, y: 533}
+  m_SizeDelta: {x: 1265, y: 1075}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1429164474
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429164472}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 6b9716fa11774804cbd75116762f4c33, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1429164475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429164472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: -7137991587979950501, guid: 15eaf84744140384ab8a3dfa380e7cd1, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1429164476
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1429164472}
+  m_CullTransparentMesh: 1
 --- !u!1 &1435848351
 GameObject:
   m_ObjectHideFlags: 0
@@ -6675,6 +6773,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1909494233}
+  - {fileID: 1429164473}
   - {fileID: 2143925981}
   - {fileID: 2011319610}
   m_Father: {fileID: 0}
@@ -8063,6 +8162,7 @@ GameObject:
   - component: {fileID: 2011319613}
   - component: {fileID: 2011319612}
   - component: {fileID: 2011319611}
+  - component: {fileID: 2011319614}
   m_Layer: 5
   m_Name: Quit
   m_TagString: Untagged
@@ -8184,6 +8284,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2011319609}
   m_CullTransparentMesh: 1
+--- !u!95 &2011319614
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2011319609}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 0a5f379d25619fe48bfa13597a769758, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2016449507
 GameObject:
   m_ObjectHideFlags: 0
@@ -8456,37 +8578,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundList:
   - id: cannon
-    clip: {fileID: 8300000, guid: 8bb87dd2ab3e6bd46881ac472d14f4a3, type: 3}
+    clip: {fileID: 8300000, guid: cce48691b594a5a49bdfc98531e00677, type: 3}
     volume: 1
   - id: glug
-    clip: {fileID: 8300000, guid: 8caef0c69fdfcf54cb877b55b4c6e0aa, type: 3}
+    clip: {fileID: 8300000, guid: 1eb7b3c0c74a5f042a89f8e350e12dd7, type: 3}
     volume: 1
   - id: yaarhigh
-    clip: {fileID: 8300000, guid: 72de1d6877a0ea149a3dc998ba01f3c5, type: 3}
+    clip: {fileID: 8300000, guid: cf07decd999d6464e8d8cdd195af1893, type: 3}
     volume: 1
   - id: alert
-    clip: {fileID: 8300000, guid: 2a4d76a962db0d947a445f53f95e3810, type: 3}
+    clip: {fileID: 8300000, guid: e4a5792ea8213dc4490f0cb1b615bc09, type: 3}
     volume: 1
   - id: splash
-    clip: {fileID: 8300000, guid: 1e57209ae8459d7479ea5198b7cda159, type: 3}
+    clip: {fileID: 8300000, guid: ae1c509c0f6ec7941b43b6fb7898e8aa, type: 3}
     volume: 1
   - id: swig
-    clip: {fileID: 8300000, guid: fdf0ec6a15fa23148ab679d7776544a8, type: 3}
+    clip: {fileID: 8300000, guid: 784f86f35d470a84cb7e05e5f7b588ef, type: 3}
     volume: 1
   - id: move
     clip: {fileID: 8300000, guid: abc321e754b6357469d061227a075f38, type: 3}
-    volume: 1
+    volume: 0.786
   - id: awaken
     clip: {fileID: 8300000, guid: 3f9d4e0f5f60ce845b1023cd670867e1, type: 3}
     volume: 1
   - id: yaarmid
-    clip: {fileID: 8300000, guid: 89763f8a20e79554d8607462803224f9, type: 3}
+    clip: {fileID: 8300000, guid: 62272f180146d5d4ea5dde51f617e882, type: 3}
     volume: 1
   - id: yaarlow
-    clip: {fileID: 8300000, guid: c96fb5823bafab24cbbfb81b882a3780, type: 3}
+    clip: {fileID: 8300000, guid: f75ce4489fad8364d93475057df36f10, type: 3}
     volume: 1
   - id: yaardrunk
-    clip: {fileID: 8300000, guid: 8fdca727ff1337643bec51b8fee1d129, type: 3}
+    clip: {fileID: 8300000, guid: 7998ba9f60967b54aa46ddfee4124f45, type: 3}
     volume: 1
   - id: lowcourage
     clip: {fileID: 8300000, guid: 44e0ded1238b7af4981493cb8f832fa5, type: 3}
@@ -8987,6 +9109,7 @@ GameObject:
   - component: {fileID: 2143925984}
   - component: {fileID: 2143925983}
   - component: {fileID: 2143925982}
+  - component: {fileID: 2143925985}
   m_Layer: 5
   m_Name: Resume
   m_TagString: Untagged
@@ -9108,6 +9231,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2143925980}
   m_CullTransparentMesh: 1
+--- !u!95 &2143925985
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2143925980}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f3488f237ee31a34cb4b62856be3e57e, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 2
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
