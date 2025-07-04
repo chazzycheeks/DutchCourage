@@ -1,0 +1,358 @@
+fileFormatVersion: 2
+guid: ad3e20a7799a0434aa95976a9bf74596
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4741897050093830521
+    second: NFTS Games Blk_0
+  - first:
+      213: 4867377699176212843
+    second: NFTS Games Blk_1
+  - first:
+      213: 4937866847013794603
+    second: NFTS Games Blk_2
+  - first:
+      213: -664704214404345574
+    second: NFTS Games Blk_3
+  - first:
+      213: -1439286242128870125
+    second: NFTS Games Blk_4
+  - first:
+      213: -6022121958772694406
+    second: NFTS Games Blk_5
+  - first:
+      213: -6516640371203510852
+    second: NFTS Games Blk_6
+  - first:
+      213: 733301825785954703
+    second: NFTS Games Blk_7
+  - first:
+      213: -238932373179751310
+    second: NFTS Games Blk_8
+  - first:
+      213: -1653163742143028819
+    second: NFTS Games Blk_9
+  - first:
+      213: 7498889191586602240
+    second: NFTS Games Blk_10
+  - first:
+      213: -8371380862673460498
+    second: NFTS Games Blk_11
+  - first:
+      213: 8595903010557412444
+    second: NFTS Games Blk_12
+  - first:
+      213: 6499920349074320497
+    second: NFTS Games Blk_13
+  - first:
+      213: -6713110635688414365
+    second: NFTS Games Blk_14
+  - first:
+      213: -3484853064585330168
+    second: NFTS Games Blk_15
+  - first:
+      213: 7308445755804757868
+    second: NFTS Games Blk_16
+  - first:
+      213: -4466452509104932289
+    second: NFTS Games Blk_17
+  - first:
+      213: 5184155136236373659
+    second: NFTS Games Blk_18
+  - first:
+      213: 1826000244526690536
+    second: NFTS Games Blk_19
+  - first:
+      213: 2600791110785099301
+    second: NFTS Games Blk_20
+  - first:
+      213: 1655450735593378501
+    second: NFTS Games Blk_21
+  - first:
+      213: 632916768156462603
+    second: NFTS Games Blk_22
+  - first:
+      213: 5964674217352606455
+    second: NFTS Games Blk_23
+  - first:
+      213: 718056624079906307
+    second: NFTS Games Blk_24
+  - first:
+      213: -6773768460595978115
+    second: NFTS Games Blk_25
+  - first:
+      213: -3024953309196547322
+    second: NFTS Games Blk_26
+  - first:
+      213: -8240769803601814269
+    second: NFTS Games Blk_27
+  - first:
+      213: -8511036679776010095
+    second: NFTS Games Blk_28
+  - first:
+      213: 8712489356854827962
+    second: NFTS Games Blk_29
+  - first:
+      213: 4992368667956646117
+    second: NFTS Games Blk_30
+  - first:
+      213: 1819828210133249852
+    second: NFTS Games Blk_31
+  - first:
+      213: 15465277936406578
+    second: NFTS Games Blk_32
+  - first:
+      213: 6019824901559918646
+    second: NFTS Games Blk_33
+  - first:
+      213: 9011365521243002736
+    second: NFTS Games Blk_34
+  - first:
+      213: 7507369084701900812
+    second: NFTS Games Blk_35
+  - first:
+      213: 1022476382194925335
+    second: NFTS Games Blk_36
+  - first:
+      213: 7446831226096932127
+    second: NFTS Games Blk_37
+  - first:
+      213: -1219877478479873876
+    second: NFTS Games Blk_38
+  - first:
+      213: -1946140278437304426
+    second: NFTS Games Blk_39
+  - first:
+      213: -5249352430236025346
+    second: NFTS Games Blk_40
+  - first:
+      213: 306679294498693426
+    second: NFTS Games Blk_41
+  - first:
+      213: 193734436717498622
+    second: NFTS Games Blk_42
+  - first:
+      213: 1539068378223948970
+    second: NFTS Games Blk_43
+  - first:
+      213: 5146314689081644240
+    second: NFTS Games Blk_44
+  - first:
+      213: 5655154063869713308
+    second: NFTS Games Blk_45
+  - first:
+      213: -4371365252069901094
+    second: NFTS Games Blk_46
+  - first:
+      213: -2296529096608610153
+    second: NFTS Games Blk_47
+  - first:
+      213: -7202379102886108695
+    second: NFTS Games Blk_48
+  - first:
+      213: 2126658890607959455
+    second: NFTS Games Blk_49
+  - first:
+      213: 454042425916413145
+    second: NFTS Games Blk_50
+  - first:
+      213: 5967866064570268109
+    second: NFTS Games Blk_51
+  - first:
+      213: -8257541694976278981
+    second: NFTS Games Blk_52
+  - first:
+      213: -7305703195894403118
+    second: NFTS Games Blk_53
+  - first:
+      213: 1306190440830027550
+    second: NFTS Games Blk_54
+  - first:
+      213: 4766074557784034251
+    second: NFTS Games Blk_55
+  - first:
+      213: 1024147004884312664
+    second: NFTS Games Blk_56
+  - first:
+      213: -5325652628467038331
+    second: NFTS Games Blk_57
+  - first:
+      213: 8750849953470577796
+    second: NFTS Games Blk_58
+  - first:
+      213: -6671341764153967177
+    second: NFTS Games Blk_59
+  - first:
+      213: -3723324873376627669
+    second: NFTS Games Blk_60
+  - first:
+      213: 6694150490637118300
+    second: NFTS Games Blk_61
+  - first:
+      213: 6036662316947154891
+    second: NFTS Games Blk_62
+  - first:
+      213: 6261777166909602497
+    second: NFTS Games Blk_63
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NFTS Games Blk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 3285
+        height: 1254
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf224cadd9c62714f98f884347c8d7d0
+      internalID: -2083697259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 1721b38bce3f0d349af9d55fb9a0e8bb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      NFTS Games Blk_0: -2083697259
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

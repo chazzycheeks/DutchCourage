@@ -85,6 +85,11 @@ public class AudioManager : MonoBehaviour
     {
         PlaySound("sink");
     }
+
+    public void PlayLowCourage()
+    {
+        PlaySound("lowWarning");
+    }
     private void PlaySound(string targetId)
     {
 

@@ -1775,7 +1775,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.112948895, y: -0.22589648}
+  m_Offset: {x: 0.112948895, y: 0.09029865}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1785,7 +1785,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 3.855444, y: 0.51720166}
+  m_Size: {x: 3.855444, y: 1.1495919}
   m_EdgeRadius: 0
 --- !u!1 &399441569
 GameObject:
@@ -3405,8 +3405,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 2fa3dc4560bd48043a1975d0b7e53c65, type: 3}
-  m_Resource: {fileID: 8300000, guid: 2fa3dc4560bd48043a1975d0b7e53c65, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 4b94d0d9d50596b4d81c93d08f25abea, type: 3}
+  m_Resource: {fileID: 8300000, guid: 4b94d0d9d50596b4d81c93d08f25abea, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
@@ -4403,7 +4403,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0.828}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 28.7775, y: -71.9599}
+  m_AnchoredPosition: {x: 28.777496, y: -71.9599}
   m_SizeDelta: {x: 1301.9275, y: 129.1664}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1014165757
@@ -5451,6 +5451,7 @@ GameObject:
   - component: {fileID: 1528766329}
   - component: {fileID: 1528766330}
   - component: {fileID: 1528766331}
+  - component: {fileID: 1528766332}
   m_Layer: 0
   m_Name: 9_Damage_0
   m_TagString: Untagged
@@ -5550,6 +5551,103 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!82 &1528766332
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528766328}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 44e0ded1238b7af4981493cb8f832fa5, type: 3}
+  m_Resource: {fileID: 8300000, guid: 44e0ded1238b7af4981493cb8f832fa5, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1546352454
 GameObject:
   m_ObjectHideFlags: 0
@@ -7207,6 +7305,7 @@ GameObject:
   - component: {fileID: 1864002490}
   - component: {fileID: 1864002492}
   - component: {fileID: 1864002491}
+  - component: {fileID: 1864002493}
   m_Layer: 5
   m_Name: DC Meter inside
   m_TagString: Untagged
@@ -7271,6 +7370,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1864002489}
   m_CullTransparentMesh: 1
+--- !u!95 &1864002493
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864002489}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1871918533
 GameObject:
   m_ObjectHideFlags: 0
@@ -8578,8 +8699,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   soundList:
   - id: cannon
-    clip: {fileID: 8300000, guid: cce48691b594a5a49bdfc98531e00677, type: 3}
-    volume: 1
+    clip: {fileID: 8300000, guid: 7df11b1392e7cfe489f626ad6389e876, type: 3}
+    volume: 0.869
   - id: glug
     clip: {fileID: 8300000, guid: 1eb7b3c0c74a5f042a89f8e350e12dd7, type: 3}
     volume: 1
@@ -8608,7 +8729,7 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: f75ce4489fad8364d93475057df36f10, type: 3}
     volume: 1
   - id: yaardrunk
-    clip: {fileID: 8300000, guid: 7998ba9f60967b54aa46ddfee4124f45, type: 3}
+    clip: {fileID: 8300000, guid: ffb4ef5788ba409458a76e0a20e25d5d, type: 3}
     volume: 1
   - id: lowcourage
     clip: {fileID: 8300000, guid: 44e0ded1238b7af4981493cb8f832fa5, type: 3}
@@ -8625,6 +8746,9 @@ MonoBehaviour:
   - id: sink
     clip: {fileID: 8300000, guid: cd5862839bfce474aabb02c9381b55e6, type: 3}
     volume: 0.677
+  - id: lowWarning
+    clip: {fileID: 8300000, guid: 44e0ded1238b7af4981493cb8f832fa5, type: 3}
+    volume: 1
   musicManager: {fileID: 1678796413}
 --- !u!4 &2039664181
 Transform:

@@ -125,6 +125,11 @@ public class DutchCourageMeter : MonoBehaviour
             depletionFactor = 2.2f;
         }
 
+        /*if (currentCourage > 10f)
+        {
+            audioManager.PlayLowCourageAlert();
+        }*/
+
         currentCourage -= Time.deltaTime * depletionFactor;
     }
 }
