@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: abddacc81780ec74893345b506c016b2
+guid: e1a628321143e37458207c090ba00628
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2685709161336255961
-    second: Pause_Button_0
+      213: -6909528557015947233
+    second: Studio_Cas_Logo_With_Text_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -109,30 +109,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Pause_Button_0
+      name: Studio_Cas_Logo_With_Text_0
       rect:
         serializedVersion: 2
-        x: 147
-        y: 121
-        width: 260
-        height: 263
+        x: 64
+        y: 54
+        width: 2490
+        height: 2237
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,8 +128,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9d5b573b04e854520800000000000000
-      internalID: 2685709161336255961
+      spriteID: f18a5a9b26c6c10a0800000000000000
+      internalID: -6909528557015947233
       vertices: []
       indices: 
       edges: []
@@ -160,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Pause_Button_0: 2685709161336255961
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
